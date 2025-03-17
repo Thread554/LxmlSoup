@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+LxmlSoup/LxmlSoup.py
+LxmlSoup/__init__.py
+LxmlSoup.egg-info/PKG-INFO
+LxmlSoup.egg-info/SOURCES.txt
+LxmlSoup.egg-info/dependency_links.txt
+LxmlSoup.egg-info/requires.txt
+LxmlSoup.egg-info/top_level.txt
+tests/test_lxmlsoup.py
