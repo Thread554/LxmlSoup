@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LxmlSoup"
+version = "2.0.0"
+description = "A fast, focused Beautiful Soup-style HTML query API powered by lxml"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Alexander554", email = "gaa.28112008@gmail.com" },
+]
+keywords = ["html", "parser", "scraping", "lxml", "beautifulsoup"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Text Processing :: Markup :: HTML",
+]
+dependencies = [
+  "lxml>=5.0",
+  "cssselect>=1.2",
+]
+
+[project.optional-dependencies]
+test = [
+  "beautifulsoup4>=4.12",
+  "pytest>=8",
+]
+dev = [
+  "beautifulsoup4>=4.12",
+  "build>=1.2",
+  "pytest>=8",
+]
+
+[project.urls]
+Homepage = "https://github.com/Thread554/LxmlSoup"
+Repository = "https://github.com/Thread554/LxmlSoup"
+Issues = "https://github.com/Thread554/LxmlSoup/issues"
+
+[tool.setuptools.packages.find]
+include = ["LxmlSoup*"]
+
+[tool.setuptools.package-data]
+LxmlSoup = ["py.typed"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

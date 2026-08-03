@@ -1,0 +1,4 @@
+include CHANGELOG.md
+include THIRD_PARTY_NOTICES.md
+recursive-include benchmarks *.py
+recursive-include tests *.html *.py
